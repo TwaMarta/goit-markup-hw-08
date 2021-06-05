@@ -1,0 +1,68 @@
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 1200px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid getColor("tertiary");
+    border-radius: 4px;
+    fill: getColor("tertiary");
+
+    &:hover,
+    &:focus {
+      fill: getColor("accent");
+      background-color: #fff;
+      border: 1px solid getColor("accent");
+    }
+  }
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .clients {
+    width: 480px;
+    height: 426px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+    &__link {
+      width: 210px;
+      height: 92px;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    height: 300x;
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__link {
+      margin-bottom: 30px;
+      width: 226px;
+      height: 92px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__link {
+      margin-bottom: 94px;
+    }
+  }
+}

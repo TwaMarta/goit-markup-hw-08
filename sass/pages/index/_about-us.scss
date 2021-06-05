@@ -1,0 +1,47 @@
+.about-us {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    height: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #fff;
+    font-weight: 700;
+    padding-top: 27px;
+    line-height: 1.172em;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .about-us {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-us {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    height: 386px;
+    flex-direction: column;
+  }
+}

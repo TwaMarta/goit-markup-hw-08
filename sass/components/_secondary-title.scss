@@ -1,0 +1,17 @@
+.secondary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.667em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 94px;
+  align-self: center;
+  color: getColor("primary");
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .secondary-title {
+    margin-top: 60px;
+  }
+}

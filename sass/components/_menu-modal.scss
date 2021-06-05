@@ -1,0 +1,129 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mobile-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    min-height: 796px;
+    background-color: #fff;
+  }
+
+  .mobile__btn--close {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile__btn--icon {
+    width: 18px;
+    height: 18px;
+
+    &:focus,
+    &:hover {
+      fill: getColor("accent");
+    }
+  }
+
+  .menu-modal {
+    display: block;
+    margin-top: 48px;
+    list-style: none;
+    padding: 0px;
+  }
+  .menu-modal__link {
+    display: block;
+    color: getColor("primary");
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-left: 32px;
+  }
+  .menu-modal__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .menu-modal__link:hover,
+  .menu-modal__link.current,
+  .menu-modal__link:focus {
+    color: getColor("accent");
+  }
+
+  .menu-modal-contacts {
+    display: block;
+    margin-top: 306px;
+    list-style: none;
+    padding: 0px;
+  }
+  .menu-modal-contacts__tel {
+    display: block;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: getColor("accent");
+    text-decoration: none;
+    margin-left: 40px;
+    margin-bottom: 32px;
+  }
+
+  .menu-modal-contacts__mail {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+
+  .menu-modal-social {
+    display: flex;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    margin-top: 64px;
+    list-style: none;
+    padding: 0px;
+  }
+  .menu-modal-social__link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: getColor("accent");
+    margin-top: 64px;
+  }
+
+  .menu-modal-social__item:not(:first-child)::before {
+    content: "";
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .btn-close .mobile {
+    border: none;
+    border-radius: 0;
+    top: 18px;
+    right: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    display: none;
+  }
+}

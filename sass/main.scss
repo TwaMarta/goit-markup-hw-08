@@ -1,0 +1,31 @@
+@import "utils/colors";
+@import "utils/font";
+@import "utils/is-hidden";
+@import "utils/visually-hidden";
+
+@import "base/container";
+@import "base/body";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/index/hero";
+@import "pages/index/atuts";
+@import "pages/index/about-us";
+@import "pages/index/team";
+@import "pages/index/clients";
+
+@import "pages/index/modal";
+
+@import "pages/portfolio/filtr";
+@import "pages/portfolio/carts";
+
+@import "components/logo";
+@import "components/menu";
+@import "components/menu-modal";
+@import "components/contact";
+@import "components/secondary-title";
+@import "components/tertiaty-title";
+@import "components/adress";
+@import "components/join-us";
+@import "components/newsletter";
