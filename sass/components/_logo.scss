@@ -22,6 +22,12 @@
   .logo {
     font-size: 24px;
 
+    &--light-theam {
+      position: absolute;
+      top: 8px;
+      left: 15px;
+    }
+
     &--dark-theam {
       display: flex;
       justify-content: center;

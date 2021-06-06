@@ -44,7 +44,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/index/poster/poster_mini.jpg");
+      url("../images/index/poster/hero-mini.jpg");
     height: 400px;
     width: 480px;
     display: flex;
@@ -62,14 +62,27 @@
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+  (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
+  (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/index/poster/hero-mini@2x.jpg");
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/index/poster/poster_semi.jpg");
+      url("../images/index/poster/hero-semi.jpg");
     height: 400px;
+    background-size: cover;
 
     &__title {
       width: 365px;
@@ -83,20 +96,47 @@
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/index/poster/hero-semi@2x.jpg");
+    background-size: cover;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/index/poster/poster_maxi.jpg");
+      url("../images/index/poster/hero-maxi.jpg");
     height: 600px;
-    max-width: 1600px;
+    width: 1600px;
+    background-size: cover;
 
     &__title {
       width: 696px;
       height: 120px;
       font-size: 44px;
     }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/index/poster/hero-maxi@2x.jpg");
   }
 }

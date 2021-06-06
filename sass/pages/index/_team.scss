@@ -80,11 +80,17 @@
       margin-bottom: 0px;
     }
 
+    &__list {
+      padding: 0px;
+    }
+
     &__card {
       height: 622px;
       width: 450px;
       align-content: space-between;
       margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &__img {
@@ -124,9 +130,11 @@
 @media screen and (min-width: 1200px) {
   .team {
     height: 708px;
+    width: 1600px;
 
     & .secondary-title {
       padding-top: 94px;
+      width: 1600px;
     }
 
     &__img {

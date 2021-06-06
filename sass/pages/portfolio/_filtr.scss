@@ -36,6 +36,7 @@
     margin-top: 60px;
     margin-bottom: 0;
     justify-content: start;
+    width: 480px;
 
     &__btn {
       margin-bottom: 15px;
@@ -46,7 +47,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .filtr {
-    width: 100%;
+    width: 768px;
     justify-content: center;
   }
 }

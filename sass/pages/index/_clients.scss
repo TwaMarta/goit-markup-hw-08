@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  width: 1200px;
 
   &__link {
     display: flex;
@@ -35,7 +34,7 @@
     height: 426px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    padding: 0 15px;
 
     &__link {
       width: 210px;
@@ -61,6 +60,10 @@
 
 @media screen and (min-width: 1200px) {
   .clients {
+    width: 1200px;
+
+    padding-left: 0;
+
     &__link {
       margin-bottom: 94px;
     }

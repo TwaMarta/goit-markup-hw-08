@@ -30,7 +30,6 @@
 
 .container {
   width: 100%;
-  padding: 0 15px;
 }
 
 .header .container {
@@ -44,8 +43,8 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .cointainer {
     width: 480px;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .footer .cointainer {
     display: flex;
@@ -56,8 +55,8 @@
   .container {
     width: 768px;
     display: flex;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -76,21 +75,12 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
-
+  .body {
+    max-width: 480px;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-
-}
-
-@media screen and (min-width: 1200px) {
-    
-}
-
-*/
 .header {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
@@ -100,6 +90,8 @@
   .header {
     height: 60px;
     align-items: center;
+    width: 480px;
+    position: relative;
   }
 }
 
@@ -128,6 +120,7 @@
     flex-direction: column;
     align-items: center;
     height: 603px;
+    width: 480px;
   }
 }
 
@@ -144,6 +137,7 @@
   .footer {
     height: 252px;
     padding-top: 40px;
+    width: 1600px;
   }
 }
 
@@ -188,7 +182,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/poster/poster_mini.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/poster/hero-mini.jpg");
     height: 400px;
     width: 480px;
     display: flex;
@@ -204,10 +198,17 @@
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/poster/hero-mini@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/poster/poster_semi.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/poster/hero-semi.jpg");
     height: 400px;
+    background-size: cover;
   }
   .hero__title {
     width: 365px;
@@ -220,11 +221,19 @@
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/poster/hero-semi@2x.jpg");
+    background-size: cover;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/poster/poster_maxi.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/poster/hero-maxi.jpg");
     height: 600px;
-    max-width: 1600px;
+    width: 1600px;
+    background-size: cover;
   }
   .hero__title {
     width: 696px;
@@ -233,11 +242,17 @@
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/poster/hero-maxi@2x.jpg");
+  }
+}
+
 .atuts__list {
   display: flex;
   list-style: none;
-  width: 100%;
   padding-left: 0;
+  padding-right: 0;
   margin: 0;
 }
 
@@ -278,6 +293,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .atuts {
+    width: 480px;
+  }
   .atuts__list {
     flex-direction: column;
     align-items: center;
@@ -298,6 +316,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .atuts {
     height: 627px;
+    width: 768px;
   }
   .atuts__list {
     margin-top: 60px;
@@ -317,6 +336,7 @@
   .atuts__list {
     justify-content: space-between;
     padding-top: 94px;
+    width: 1200px;
   }
 }
 
@@ -445,11 +465,16 @@
     padding-top: 0;
     margin-bottom: 0px;
   }
+  .team__list {
+    padding: 0px;
+  }
   .team__card {
     height: 622px;
     width: 450px;
     align-content: space-between;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .team__img {
     width: 450px;
@@ -484,9 +509,11 @@
 @media screen and (min-width: 1200px) {
   .team {
     height: 708px;
+    width: 1600px;
   }
   .team .secondary-title {
     padding-top: 94px;
+    width: 1600px;
   }
   .team__img {
     width: 270px;
@@ -499,7 +526,6 @@
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  width: 1200px;
 }
 
 .clients__link {
@@ -530,7 +556,7 @@
     height: 426px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    padding: 0 15px;
   }
   .clients__link {
     width: 210px;
@@ -554,6 +580,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .clients {
+    width: 1200px;
+    padding-left: 0;
+  }
   .clients__link {
     margin-bottom: 94px;
   }
@@ -775,6 +805,7 @@
     margin-top: 60px;
     margin-bottom: 0;
     justify-content: start;
+    width: 480px;
   }
   .filtr__btn {
     margin-bottom: 15px;
@@ -785,7 +816,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .filtr {
-    width: 100%;
+    width: 768px;
     justify-content: center;
   }
 }
@@ -874,6 +905,7 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .portfolio {
     margin-bottom: 0;
+    width: 480px;
   }
   .portfolio__carts {
     width: 450px;
@@ -919,6 +951,11 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .logo {
     font-size: 24px;
+  }
+  .logo--light-theam {
+    position: absolute;
+    top: 8px;
+    left: 15px;
   }
   .logo--dark-theam {
     display: flex;
@@ -996,7 +1033,7 @@
   .menu__btn {
     position: absolute;
     top: 18px;
-    right: 23px;
+    right: 25px;
     background-color: #ffffff;
     cursor: pointer;
     border: none;
@@ -1217,6 +1254,12 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .secondary-title {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .secondary-title {
     margin-top: 60px;
   }
